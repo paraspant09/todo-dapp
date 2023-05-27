@@ -1,0 +1,33 @@
+.header {
+  border-bottom: 4px solid #242731;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px;
+  padding-top: 10px;
+  align-items: center;
+}
+
+.section {
+  border-bottom: 2px solid #3772ff;
+}
+
+.wallet{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #191b20;
+  padding: 3px;
+  border-radius: 10px;
+  font-size: small;
+  font-weight: lighter;
+}
+
+.greenButton {
+  background: #a3e3ff;
+  border-radius: 5px;
+  height: 20px;
+  padding: 3px 8px;
+  color: #3772ff;
+}

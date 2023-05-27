@@ -1,0 +1,54 @@
+.todoList {
+  overflow: scroll;
+
+  display: flex;
+  flex-direction: row;
+
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.todoList::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.item{
+  width: 184px;
+  margin: 8px;
+}
+
+.createTodoListBox{
+  background: #242731;
+  border-radius: 8px;
+  padding: 5px 0px;
+  padding-left: 10px;
+  margin-top: 17px;
+  
+  display: flex;
+  align-items: center;
+}
+
+.createTodoListInputTitle {
+  background-color: #191b20;
+  opacity: 0.8;
+  border-radius: 16px;
+  all: unset;
+  color: #6e6e6e;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+
+  margin: 0px 5px;
+  width: 136px;
+}
+
+.addIcon {
+  border-radius: 14px;
+  background-color: #353945;
+  display: flex;
+  padding: 4px;
+  padding-bottom: 3px;
+  cursor: pointer;
+}

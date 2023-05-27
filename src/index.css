@@ -1,0 +1,16 @@
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Poppins";
+  font-style: normal;
+}
+
+#root {
+  max-width: 1280px;
+}
+
+ul {
+  list-style-type: none;
+}

@@ -1,0 +1,87 @@
+.heading {
+  background: #242731;
+  color: #fff;
+  border-radius: 8px;
+  padding: 5px 10px;
+  margin-bottom: 4.87px;
+  margin-top: 17px;
+}
+
+.createTodoContainer {
+  background-color: #191b20;
+  opacity: 0.8;
+  border-radius: 10px;
+  padding: 5px 8px;
+  min-height: 75px;
+  margin-bottom: 9.5px;
+  position: relative;
+}
+
+.createTodoInputTitle {
+  all: unset;
+  color: #6e6e6e;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+
+  margin: 0px 5px;
+  width: 122px;
+  padding-bottom: 3px;
+}
+
+.createTodoInputDesc {
+  background-color: #191b20;
+  opacity: 0.8;
+  border: 0px none;
+  resize: none;
+
+  color: #808191;
+  margin-top: 5px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.createTodoInputDesc::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.createTodoInputDesc:focus {
+  outline: none;
+}
+
+.createTodoFirstRow {
+  display: flex;
+  align-items: center;
+  margin-top: 2px;
+}
+
+.addIcon {
+  border-radius: 14px;
+  background-color: #353945;
+  display: flex;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.delIcon {
+  text-align: center;
+  line-height: 19px;
+  cursor: pointer;
+}
+
+.pipe {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  left: 0px;
+  border-left: 2px solid #000aff;
+  height: 90%;
+  border-radius: 16px;
+}

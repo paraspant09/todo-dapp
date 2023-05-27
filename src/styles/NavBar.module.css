@@ -1,0 +1,35 @@
+.navbar {
+  border-right: 2px solid #242731;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.darkModeSwitch {
+  width: 50px;
+  height: 25px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.greenButton {
+  background: #a3e3ff;
+  border-radius: 5px;
+  height: 20px;
+  padding: 3px 8px;
+  color: #3772ff;
+  font-size: small;
+  font-weight: lighter;
+}
+
+.greyButton{
+  background: #242731;
+  border-radius: 5px;
+  height: 20px;
+  padding: 3px 8px;
+  font-size: small;
+  font-weight: lighter;
+}

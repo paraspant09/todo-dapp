@@ -1,0 +1,9 @@
+
+.rootBox {
+  background-color: #000000;
+  color: white;
+  display: grid;
+  grid-template-columns: 14vw 86vw;
+  grid-template-rows: 12vh 88vh;
+  min-height: 100vh;
+}
