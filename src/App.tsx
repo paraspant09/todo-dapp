@@ -10,7 +10,7 @@ function App() {
   const isDarkMode=useAppSelector(state => state.todo.isDarkMode);
 
   return (
-    <div style={!isDarkMode ? {backgroundColor:"white",color:"black"} : {}} className={styles.rootBox}>
+    <div style={!isDarkMode ? {backgroundColor:"lightgreen",color:"black"} : {}} className={styles.rootBox}>
       <NavBar />
       <Header />
       <MainContent />

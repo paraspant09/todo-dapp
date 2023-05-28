@@ -37,7 +37,7 @@ function EditTodo() {
   if (contract == null) return <h1>Loading...</h1>;
 
   return (
-    <div style={!isDarkMode ? {backgroundColor:"white",color:"black"} : {}} className={styles.EditTodo}>
+    <div style={!isDarkMode ? {backgroundColor:"lightgreen",color:"black"} : {}} className={styles.EditTodo}>
       <div className={styles.header}>
         <Back fill={!isDarkMode ? "black" : "white"} style={{ marginLeft: "24px" }} />
         <p>Edit Todo</p>
