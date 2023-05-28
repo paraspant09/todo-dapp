@@ -10,3 +10,18 @@ body {
 ul {
   list-style-type: none;
 }
+
+.notification-bar{
+  position: absolute;
+  background-color: #3772FF;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media(max-width:1150px) {
+  .notification-bar{
+    position: static;
+  }
+}

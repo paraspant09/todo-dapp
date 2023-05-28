@@ -11,6 +11,7 @@
 
 .section {
   border-bottom: 2px solid #3772ff;
+  cursor: pointer;
 }
 
 .wallet{

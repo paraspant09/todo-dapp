@@ -7,3 +7,10 @@
   grid-template-rows: 12vh 88vh;
   min-height: 100vh;
 }
+
+@media(max-width:1150px) {
+  .rootBox{
+    display: flex;
+    flex-direction: column;
+  }
+}

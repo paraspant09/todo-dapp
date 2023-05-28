@@ -10,7 +10,7 @@ import { ReactComponent as Stats } from "../assets/stats.svg";
 import { ReactComponent as Bars } from "../assets/bars.svg";
 import { ReactComponent as Share } from "../assets/share.svg";
 
-export const NavBar = () => {
+export const NavBar = ({showNav}:any) => {
   const { balance } = useAppSelector((state) => state.blockchain);
   const dispatch = useAppDipatch();
   const isDarkMode = useAppSelector((state) => state.todo.isDarkMode);
@@ -32,7 +32,7 @@ export const NavBar = () => {
   ];
 
   return (
-    <div className={styles.navbar}>
+    <div className={`${styles.navbar} ${showNav ? styles.showNav : styles.hideNav}`}>
       <div className={styles.list}>
         <div style={{ display: "flex", margin: "20px" }}>
           <div
@@ -69,7 +69,7 @@ export const NavBar = () => {
       <div style={{ display: "flex",flexDirection:"column",gap:"8px", margin: "20px" }}>
         <div style={{ display: "flex",flexDirection:"row",gap:"5px"}}>
           <div style={{color:!isDarkMode ? "white" : ""}} className={styles.greyButton}>${ethers.formatEther(balance.toString())}</div>
-          <div className={styles.greenButton}>BUY $XYZ</div>
+          <div className={styles.greenButton}>BUY $</div>
         </div>
         <div style={{ display: "flex",flexDirection:"row"}}>
           <Globe style={{ marginRight: "10px" }} />

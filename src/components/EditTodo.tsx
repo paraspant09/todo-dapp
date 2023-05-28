@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import useCreateContract from "../hooks/useCreateContract";
 import { useAppDipatch, useAppSelector } from "../redux/config/hooks";
-import { saveTodo } from "../redux/slices/todoSlice";
+import { editTodoToggle, saveTodo } from "../redux/slices/todoSlice";
 import { updateTodo } from "../utils/helperFunctions";
 import styles from "../styles/EditTodo.module.css";
 import { ReactComponent as Back } from "../assets/back.svg";
@@ -39,7 +39,19 @@ function EditTodo() {
   return (
     <div style={!isDarkMode ? {backgroundColor:"lightgreen",color:"black"} : {}} className={styles.EditTodo}>
       <div className={styles.header}>
-        <Back fill={!isDarkMode ? "black" : "white"} style={{ marginLeft: "24px" }} />
+        <Back onClick={() =>
+            dispatch(
+              editTodoToggle({
+                listId,
+                todo: {
+                  id: todo.id,
+                  title: todo.title,
+                  description: todo.description,
+                  isDone: todo.isDone,
+                },
+              })
+            )
+          } fill={!isDarkMode ? "black" : "white"} style={{ marginLeft: "24px",cursor:"pointer" }} />
         <p>Edit Todo</p>
       </div>
 
