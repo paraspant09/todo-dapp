@@ -7,10 +7,6 @@ body {
   font-style: normal;
 }
 
-#root {
-  max-width: 1280px;
-}
-
 ul {
   list-style-type: none;
 }
